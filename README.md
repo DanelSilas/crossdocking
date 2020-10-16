@@ -7,7 +7,7 @@
  A formulação para esse problema é indexado ao tempo e utiliza uma heurística construtiva gulosa.
 
 ## O Problema 
-![Cd](/imagem/cd.png)
+![Cd](/imagem/cd.jpg)
 
 Em um centro de crossdockig os caminhões chegam  nas docas de 
 entrada com diversos produtos e os mesmos devem ser encaminhados para os 
