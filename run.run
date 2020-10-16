@@ -1,0 +1,39 @@
+
+
+
+model "Mod.mod";
+data "Dados01.dat";
+option solver cplex;
+option  display solver_msg ;
+printf" \n#### Dados 01 ####\n";
+printf" ## Fase 1 \n\n";
+display Ti;
+problem prob1:Cmax,X,Y,L2,FO,r1,r2,r3,r4,r5,r6,r7,r8;
+solve prob1;
+
+printf"\n ## Fase 2\n";
+problem prob2:C,Cp,At,X,Y,L2,FO2,r1,r2,r3,r4,r5,r6,r7,r9,r10,r11;
+solve prob2;
+display Cp,C,At;
+
+printf"## Heuristica construtiva";
+model "hg.mod";
+reset;
+
+model "Mod.mod";
+data "Dados02.dat";
+option solver cplex;
+option  display solver_msg ;
+printf" \n#### Dados 02 ####\n";
+printf" ## Fase 1\n";
+display Ti;
+problem prob1:Cmax,X,Y,L2,FO,r1,r2,r3,r4,r5,r6,r7,r8;
+solve prob1;
+
+printf"\n ## Fase 2 \n\n";
+problem prob2:C,Cp,At,X,Y,L2,FO2,r1,r2,r3,r4,r5,r6,r7,r9,r10,r11;
+solve prob2;
+display Cp,C,At;
+
+printf"## Heuristica construtiva";
+model "hg.mod";
