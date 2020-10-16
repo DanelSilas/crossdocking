@@ -1,33 +1,34 @@
 # Crossdocking
 
- O problema de crossdocking È um problema de sequenciamento de caminh„oes em uma estaÁ„o de carga e descarga de veÌculos 
+ O problema de crossdocking √© um problema de sequenciamento de caminh√£oes em uma esta√ß√£o de carga e descarga de ve√≠culos 
  
-## ConsideraÁıes
+## Considera√ß√µes
 
- A formulaÁ„o para esse problema È indexado ao tempo e utiliza uma heurÌstica construtiva gulosa.
+ A formula√ß√£o para esse problema √© indexado ao tempo e utiliza uma heur√≠stica construtiva gulosa.
 
 ## O Problema 
 ![Cd](/imagem/cd.png)
-Em um centro de crossdockig os caminhıes chegam  nas docas de 
+
+Em um centro de crossdockig os caminh√µes chegam  nas docas de 
 entrada com diversos produtos e os mesmos devem ser encaminhados para os 
-caminhıes de saÌda . Os caminhıes i devem ser direcionados 
-para uma doca disponÌvel. Cada caminh„o i de entrada possui um conjunto j de 
-caminhıes de saÌda que deve atender (Sij > 0). Logo, o caminh„o de saÌda j sÛ 
-pode comeÁar a ser carregado quando seus caminhıes de entrada i est„o totalmente
-descarregados. Os caminhıes de entrada possuem uma data de chegada r (antes disso
-eles n„o est„o disponÌveis). O n˙mero de docas de entrada (maq1) e de saÌda (maq2)
-È conhecido, bem como o n˙mero de caminhıes de entrada (nv1) e de saÌda (nv2). O 
-tempo de descarga e carga de cada caminh„o È conhecido e definido como p. 
-Inicialmente, os gestores de produÁ„o devem minimizar a previs„o de sequenciamento 
+caminh√µes de sa√≠da . Os caminh√µes i devem ser direcionados 
+para uma doca dispon√≠vel. Cada caminh√£o i de entrada possui um conjunto j de 
+caminh√µes de sa√≠da que deve atender (Sij > 0). Logo, o caminh√£o de sa√≠da j s√≥ 
+pode come√ßar a ser carregado quando seus caminh√µes de entrada i est√£o totalmente
+descarregados. Os caminh√µes de entrada possuem uma data de chegada r (antes disso
+eles n√£o est√£o dispon√≠veis). O n√∫mero de docas de entrada (maq1) e de sa√≠da (maq2)
+√© conhecido, bem como o n√∫mero de caminh√µes de entrada (nv1) e de sa√≠da (nv2). O 
+tempo de descarga e carga de cada caminh√£o √© conhecido e definido como p. 
+Inicialmente, os gestores de produ√ß√£o devem minimizar a previs√£o de sequenciamento 
 do dia tentando entregar tudo o mais breve. Dado isso, cada produto passa a ter uma
 data de entrega limite (d), e uma penalidade por atraso (w) estabelecidas. Dado isso, 
-ao longo do dia deve-se verificar a posiÁ„o prevista de chegada de cada caminh„o (r). 
-Esta posiÁ„o È atualizada horahora, casa ocorra algum atraso impactante (violaÁ„o do 
-caminho crÌtico), o sequenciamento deve ser alterado visando minimizar a data 
-prometida ponderando a import‚ncia de cada cliente (min WT).
+ao longo do dia deve-se verificar a posi√ß√£o prevista de chegada de cada caminh√£o (r). 
+Esta posi√ß√£o √© atualizada horahora, casa ocorra algum atraso impactante (viola√ß√£o do 
+caminho cr√≠tico), o sequenciamento deve ser alterado visando minimizar a data 
+prometida ponderando a import√¢ncia de cada cliente (min WT).
 
 ## Uso
- utilizando o console do AMPl com o comando
+ Utilizando o console do AMPL com o comando
 ```bash
 	include run.run
 ```
