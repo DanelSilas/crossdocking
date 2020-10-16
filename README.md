@@ -31,5 +31,5 @@ prometida ponderando a importância de cada cliente (min WT).
 ## Uso
  Utilizando o console do AMPL com o comando
 ```bash
-	include run.run
+include run.run
 ```
