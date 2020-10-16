@@ -1,10 +1,6 @@
 # Crossdocking
 
- O problema de crossdocking é um problema de sequenciamento de caminhãoes em uma estação de carga e descarga de veículos 
- 
-## Considerações
-
- A formulação para esse problema é indexado ao tempo e utiliza uma heurística construtiva gulosa.
+ O problema de crossdocking é um problema de sequenciamento de caminhões em uma estação de carga e descarga com vagas limitadas 
 
 ## O Problema 
 ![Cd](/imagem/cd.jpg)
@@ -26,6 +22,11 @@ ao longo do dia deve-se verificar a posição prevista de chegada de cada caminh
 Esta posição é atualizada horahora, casa ocorra algum atraso impactante (violação do 
 caminho crítico), o sequenciamento deve ser alterado visando minimizar a data 
 prometida ponderando a importância de cada cliente (min WT).
+
+## Considerações
+
+ A formulação para esse problema é indexado ao tempo e utiliza uma heurística construtiva gulosa.
+
 
 ## Uso
  Utilizando o console do AMPL com o comando
