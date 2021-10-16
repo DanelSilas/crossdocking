@@ -25,7 +25,7 @@ prometida ponderando a importância de cada cliente (min WT).
 
 ## Considerações
 
- A formulação para esse problema é indexado ao tempo e utiliza uma heurística construtiva gulosa.
+ A formulação para esse problema é indexado ao tempo e utiliza uma heurística construtiva gulosa para encontrar uma solução rápida para o problema. 
 
 
 ## Uso
